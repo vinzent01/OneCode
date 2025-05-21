@@ -4,12 +4,12 @@ import styles from "../../css/page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-interface PostPageProps {
-  params: { slug: string };
+type Props = {
+  params: Promise<{ slug: string }>
 }
 
-export default async function PostPage({ params }: PostPageProps) {
-  const post = await getPost(params.slug);
+export default async function PostPage({ params }: Props) {
+  const post = await getPost((await params).slug);
   if (!post) return notFound();
 
   return (
