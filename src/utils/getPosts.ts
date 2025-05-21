@@ -36,3 +36,24 @@ export async function getAllPosts(): Promise<PostPreview[]> {
 
   return posts;
 }
+
+export type PostFull = PostPreview & { content: string };
+
+export async function getPost(slug: string): Promise<PostFull | null> {
+  const contentDir = path.join(process.cwd(), "content/posts");
+  const filePath = path.join(contentDir, `${slug}.md`);
+  try {
+    const fileContent = await fs.readFile(filePath, "utf-8");
+    const { data, content } = matter(fileContent);
+    return {
+      slug,
+      title: data.title || slug,
+      date: data.date || "",
+      preview: content.split("\n").slice(0, 3).join(" "),
+      image: data.image || "",
+      content,
+    };
+  } catch (e) {
+    return null;
+  }
+}

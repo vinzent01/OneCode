@@ -11,7 +11,7 @@ export default function Home() {
       <main className={pageStyles.main}>
         <section className={pageStyles.featured}>
           <h1 className={headerStyles.logoText + " center"}>OneCode</h1>
-          <p className={headerStyles.subtitle}>
+          <p className={headerStyles.subtitle + " center"}>
             Bem-vindo ao OneCode! Aqui você encontra dicas, tutoriais e novidades do
             mundo da programação.
           </p>

@@ -3,6 +3,7 @@ import pageStyles from "../css/page.module.css";
 import buttonStyles from "../css/button.module.css";
 import footerStyles from "../css/footer.module.css";
 import { getAllPosts } from "@/utils/getPosts";
+import Link from "next/link";
 
 export default async function Blog() {
   const posts = await getAllPosts();
@@ -16,15 +17,19 @@ export default async function Blog() {
             {posts.map((post) => (
               <article className={pageStyles.post} key={post.slug}>
                 {post.image && (
-                  <Image
-                    className={pageStyles.postImage}
-                    src={post.image}
-                    alt={post.title}
-                    width={600}
-                    height={320}
-                  />
+                  <Link href={`/blog/${post.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
+                    <Image
+                      className={pageStyles.postImage}
+                      src={post.image}
+                      alt={post.title}
+                      width={600}
+                      height={320}
+                    />
+                  </Link>
                 )}
-                <h3>{post.title}</h3>
+                <Link href={`/blog/${post.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
+                  <h3>{post.title}</h3>
+                </Link>
                 <span style={{ color: "#888", fontSize: "0.95rem" }}>
                   {post.date}
                 </span>

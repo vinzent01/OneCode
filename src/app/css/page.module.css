@@ -129,3 +129,13 @@ body {
     height: 220px;
   }
 }
+
+@media (max-width: 1600px) {
+  .featured {
+    min-width: 1100px;
+  }
+  .post {
+    padding: 24px 10px;
+  }
+  
+}
