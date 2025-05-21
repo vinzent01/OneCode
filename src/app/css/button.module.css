@@ -1,0 +1,23 @@
+/* Botão grande */
+.bigButton, .button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 16px 36px;
+  background: linear-gradient(90deg, #3a7bd5 60%, #60aaff 100%);
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px 0 rgba(58,123,213,0.10);
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+.bigButton:hover, .button:hover {
+  background: linear-gradient(90deg, #60aaff 60%, #3a7bd5 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(58,123,213,0.18);
+}

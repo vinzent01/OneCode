@@ -1,0 +1,131 @@
+/* Página */
+body {
+  min-height: 100svh;
+  width: 100vw;
+  padding: 0;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Posts em destaque */
+.featured {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 40px 48px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto 32px auto;
+  color: var(--foreground);
+  transition: box-shadow 0.2s, border 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 4px 24px 0 rgba(58,123,213,0.08);
+}
+
+.featured h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  margin-top: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 8px #1a1d1f33;
+  color: var(--primary);
+}
+
+.featured p {
+  color: var(--subtitle);
+  font-size: 1.08rem;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.post {
+  border-radius: 10px;
+  padding: 32px 40px;
+  min-width: 320px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  transition: border 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.post h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.35rem;
+  color: var(--foreground);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.post p {
+  font-size: 0.98rem;
+  color: var(--subtitle);
+  margin-bottom: 6px;
+}
+
+.post a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.post a:hover {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+
+.postImage {
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px 0 rgba(58,123,213,0.10);
+  background: var(--secondary);
+}
+
+@media (max-width: 700px) {
+  .featured {
+    padding: 12px 2px;
+  }
+  .posts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post {
+    min-width: 140px;
+    max-width: 100%;
+    padding: 12px 8px;
+  }
+  .page {
+    padding: 24px 4px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .featured {
+    padding: 32px 10px;
+    max-width: 98vw;
+  }
+  .post {
+    padding: 24px 10px;
+  }
+  .postImage {
+    height: 220px;
+  }
+}

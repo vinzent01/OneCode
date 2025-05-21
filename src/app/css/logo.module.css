@@ -1,0 +1,17 @@
+
+.logoBrand {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a7bd5;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.logoText {
+  color: #f3f3f3;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}

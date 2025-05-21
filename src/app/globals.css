@@ -1,13 +1,29 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #2563eb;
+  --primary-light: #60aaff;
+  --secondary: #f3f3f3;
+  --subtitle: #555;
+  --header-bg: #f9fafe;
+  --navbar-bg: #f3f3f3;
+  --card-bg: #fff;
+  --border: #e5e7eb;
+  --footer-color: #888;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="dark"] {
+  --background: #181a1b;
+  --foreground: #ededed;
+  --primary: #60aaff;
+  --primary-light: #2563eb;
+  --secondary: #23272a;
+  --subtitle: #b0b8c1;
+  --header-bg: #181a1b;
+  --navbar-bg: #23272a;
+  --card-bg: #23272a;
+  --border: #23272a;
+  --footer-color: #bbb;
 }
 
 html,
@@ -39,4 +55,42 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+/* Navbar */
+
+.navlink:hover,
+.navlink.active {
+  background: #23272a;
+  color: #60aaff;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    gap: 8px;
+    padding: 10px 0;
+    font-size: 0.98rem;
+  }
+  .navlink {
+    padding: 7px 10px;
+    font-size: 1rem;
+  }
+}
+
+@keyframes pageBar {
+  from { width: 0; }
+  to { width: 100vw; }
+}
+
+.center {
+  margin: 0 auto;;
+}
+
+.centerText {
+  text-align: center;
+}
+.centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
