@@ -17,7 +17,7 @@ export default function Sobre() {
           <p>
             O blog é mantido por entusiastas e profissionais de tecnologia apaixonados por ensinar e aprender.
           </p>
-          <Link href="/blog" className={buttonStyles.button}>
+          <Link href="/blog" className={buttonStyles.button + " center"}>
             Ver posts do blog →
           </Link>
         </section>
