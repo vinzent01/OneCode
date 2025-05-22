@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { getPost } from "@/utils/getPosts";
 import styles from "../../css/page.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import { MarkdownRenderer } from "@/components/MarkdownRenderer";
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -28,9 +28,7 @@ export default async function PostPage({ params }: Props) {
           />
         )}
         <div style={{ color: "var(--foreground)", fontSize: "1.15rem", lineHeight: 1.7 }}>
-          {post.content.split("\n").map((line, i) => (
-            <p key={i}>{line}</p>
-          ))}
+          <MarkdownRenderer>{post.content}</MarkdownRenderer>
         </div>
       </article>
     </div>
