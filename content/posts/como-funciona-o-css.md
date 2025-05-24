@@ -4,8 +4,6 @@ date: "2025-05-22"
 image: "/images/programming-screen.jpg"
 ---
 
-## O que é CSS?
-
 CSS Significa Cascading Styling Sheets, em português **Folhas de estilos em cascata**. Em termos simples, CSS é usado para definir a aparência dos sites na web, enquanto o HTML serve para criar a estrutura e o layout da página, o css permite criar estilos personalizados aos elementos HTML, como cores, tamanhos, fontes, espaçamentos, posicionamentos, bordas, sombras, animações e muito mais.
 
 ## As três formas principais de se usar CSS

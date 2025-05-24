@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={pageStyles.page}>
       <main className={pageStyles.main}>
-        <section className={pageStyles.featured}>
+        <section className={pageStyles.featured_slim}>
           <h1 className={headerStyles.logoText + " center"}>OneCode</h1>
           <p className={headerStyles.subtitle + " center"}>
             Bem-vindo ao OneCode! Aqui você encontra dicas, tutoriais e novidades do

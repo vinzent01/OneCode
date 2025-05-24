@@ -1,7 +1,5 @@
 import Image from "next/image";
 import pageStyles from "../css/page.module.css";
-import buttonStyles from "../css/button.module.css";
-import footerStyles from "../css/footer.module.css";
 import { getAllPosts } from "@/utils/getPosts";
 import Link from "next/link";
 

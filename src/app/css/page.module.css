@@ -17,6 +17,21 @@
   box-shadow: 0 4px 24px 0 rgba(58,123,213,0.08);
 }
 
+.featured_slim {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 40px 48px;
+  width: 100%;
+  max-width: auto;
+  margin: 40px auto 32px auto;
+  color: var(--foreground);
+  transition: box-shadow 0.2s, border 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 4px 24px 0 rgba(58,123,213,0.08);
+}
+
 .featured h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
@@ -39,6 +54,7 @@
   flex-direction: column;
   gap: 32px;
   align-items: stretch;
+  width:  100%;
 }
 
 .post {

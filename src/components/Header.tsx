@@ -67,7 +67,6 @@ export default function Header() {
     <div className={headerStyles.header}>
       <div className={headerStyles.headerContent}>
         <Logo />
-        <ThemeToggle />
 
         {/* Botão hambúrguer para mobile */}
         <button
@@ -77,6 +76,7 @@ export default function Header() {
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
+
 
         {/* Navbar desktop */}
         <nav className={navbarStyles.navbar}>
@@ -102,6 +102,8 @@ export default function Header() {
             Blog
           </Link>
         </nav>
+        <ThemeToggle />
+
       </div>
       {/* Navbar mobile */}
       {menuOpen && (
