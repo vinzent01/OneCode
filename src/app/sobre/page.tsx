@@ -4,6 +4,11 @@ import buttonStyles from "../css/button.module.css";
 import footerStyles from "../css/footer.module.css";
 import Link from "next/link";
 
+export const metadata = {
+  title: 'OneCode - Sobre',
+  description: 'Saiba mais sobre o OneCode, nossa missão e quem faz parte do projeto.',
+};
+
 export default function Sobre() {
   return (
     <div className={pageStyles.page}>

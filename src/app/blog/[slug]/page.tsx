@@ -4,6 +4,11 @@ import styles from "../../css/page.module.css";
 import Image from "next/image";
 import { MarkdownRenderer } from "@/components/MarkdownRenderer";
 
+export const metadata = { 
+  title: "OneCode - Post",
+  description: "Leia nosso post sobre programação, dicas, tutoriais e novidades do mundo dev.",
+};
+
 type Props = {
   params: Promise<{ slug: string }>
 }

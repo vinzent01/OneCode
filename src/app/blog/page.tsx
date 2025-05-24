@@ -3,6 +3,11 @@ import pageStyles from "../css/page.module.css";
 import { getAllPosts } from "@/utils/getPosts";
 import Link from "next/link";
 
+export const metadata = {
+  title: "OneCode - Blog",
+  description: "Explore nossos posts sobre programação, dicas, tutoriais e novidades do mundo dev.",
+};
+
 export default async function Blog() {
   const posts = await getAllPosts();
 

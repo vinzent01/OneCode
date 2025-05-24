@@ -4,6 +4,7 @@ import "./css/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,9 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <title>OneCode</title>
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
         {children}

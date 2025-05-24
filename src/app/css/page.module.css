@@ -1,5 +1,12 @@
 /* Página */
 
+.subtitle {
+  font-size: 1.13rem;
+  text-align: center;
+  max-width: 420px;
+  font-weight: 400;
+}
+
 
 /* Posts em destaque */
 .featured {
